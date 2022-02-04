@@ -15,6 +15,7 @@
 		6B9F149527AA49D0006DACE2 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9F149427AA49D0006DACE2 /* DataController.swift */; };
 		6BA5DAD627ACB7420038C9BF /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5DAD527ACB7420038C9BF /* RatingView.swift */; };
 		6BA5DAD827ACBCB60038C9BF /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5DAD727ACBCB60038C9BF /* EmojiRatingView.swift */; };
+		6BA5DADA27ACC1460038C9BF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA5DAD927ACC1460038C9BF /* DetailView.swift */; };
 		6BBB311D27ABAED300650921 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BBB311C27ABAED300650921 /* AddBookView.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		6B9F149427AA49D0006DACE2 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		6BA5DAD527ACB7420038C9BF /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		6BA5DAD727ACBCB60038C9BF /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
+		6BA5DAD927ACC1460038C9BF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		6BBB311C27ABAED300650921 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 				6B9F149127AA49A8006DACE2 /* Bookworm.xcdatamodeld */,
 				6BBB311C27ABAED300650921 /* AddBookView.swift */,
 				6B2C5EFB27AA03FA001074AD /* Assets.xcassets */,
+				6BA5DAD927ACC1460038C9BF /* DetailView.swift */,
 				6B2C5EFD27AA03FA001074AD /* Preview Content */,
 			);
 			path = Bookworm;
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B2C5EFA27AA03FA001074AD /* ContentView.swift in Sources */,
+				6BA5DADA27ACC1460038C9BF /* DetailView.swift in Sources */,
 				6B9F149527AA49D0006DACE2 /* DataController.swift in Sources */,
 				6BA5DAD827ACBCB60038C9BF /* EmojiRatingView.swift in Sources */,
 				6B9F149327AA49A8006DACE2 /* Bookworm.xcdatamodeld in Sources */,
