@@ -29,7 +29,9 @@ struct RatingView: View {
                 renderImage(forIndex: number)
                     .foregroundColor(number > rating ? offColor : onColor)
                     .onTapGesture {
-                        rating = number
+                        withAnimation {
+                            rating = number
+                        }
                     }
             }
         }

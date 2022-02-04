@@ -16,6 +16,7 @@ struct AddBookView: View {
     @State private var rating: Int = 3
     @State private var genre: String = ""
     @State private var review: String = ""
+    @State var reviewPlaceholderString: String = "Enter an optional review here…"
     
     let genres = ["Fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
     
@@ -35,7 +36,18 @@ struct AddBookView: View {
                 }
                 
                 Section {
-                    TextEditor(text: $review)
+                    ZStack {
+                        if self.review.isEmpty {
+                                TextEditor(text: $reviewPlaceholderString)
+                                    .font(.body)
+                                    .foregroundColor(.gray)
+                                    .disabled(true)
+                        }
+                        TextEditor(text: $review)
+                            .font(.body)
+                            .opacity(self.review.isEmpty ? 0.25 : 1)
+                    }
+                    
                     HStack(alignment: .center) {
                         Spacer()
                         RatingView(rating: $rating)
@@ -58,6 +70,7 @@ struct AddBookView: View {
                     try? moc.save()
                     dismiss()
                 }
+                .disabled(title.isEmpty || author.isEmpty || genre.isEmpty)
             }
             .navigationTitle("Add Book")
         }
