@@ -26,11 +26,20 @@ struct AddBookView: View {
                 Section {
                     TextField("Title", text: $title)
                     TextField("Author's name", text: $author)
-                    Picker("Genre", selection: $genre) {
-                        ForEach(genres, id:\.self) { genre in
-                            Text(genre)
+                    NavigationLink(destination: {
+                        Form {
+                            Picker("Types", selection: $genre) {
+                                ForEach(genres, id:\.self) { genre in
+                                    Text(genre)
+                                }
+                            }
+                            .pickerStyle(.inline)
                         }
-                    }
+                        .navigationTitle("Choose a genre")
+                        .navigationBarTitleDisplayMode(.inline)
+                    }, label: {
+                        Text("Genre")
+                    })
                 } header: {
                     Text("Tell me about the book")
                 }
