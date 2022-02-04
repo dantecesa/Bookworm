@@ -64,14 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				6B2C5EF727AA03FA001074AD /* BookwormApp.swift */,
-				6B2C5EF927AA03FA001074AD /* ContentView.swift */,
-				6BA5DAD527ACB7420038C9BF /* RatingView.swift */,
-				6BA5DAD727ACBCB60038C9BF /* EmojiRatingView.swift */,
-				6B9F149427AA49D0006DACE2 /* DataController.swift */,
-				6B9F149127AA49A8006DACE2 /* Bookworm.xcdatamodeld */,
-				6BBB311C27ABAED300650921 /* AddBookView.swift */,
+				6BA5DADB27ACCE6F0038C9BF /* Views */,
+				6BA5DADD27ACCE840038C9BF /* Data Model */,
 				6B2C5EFB27AA03FA001074AD /* Assets.xcassets */,
-				6BA5DAD927ACC1460038C9BF /* DetailView.swift */,
 				6B2C5EFD27AA03FA001074AD /* Preview Content */,
 			);
 			path = Bookworm;
@@ -83,6 +78,35 @@
 				6B2C5EFE27AA03FA001074AD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6BA5DADB27ACCE6F0038C9BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6B2C5EF927AA03FA001074AD /* ContentView.swift */,
+				6BA5DAD927ACC1460038C9BF /* DetailView.swift */,
+				6BBB311C27ABAED300650921 /* AddBookView.swift */,
+				6BA5DADC27ACCE780038C9BF /* DetailViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6BA5DADC27ACCE780038C9BF /* DetailViews */ = {
+			isa = PBXGroup;
+			children = (
+				6BA5DAD527ACB7420038C9BF /* RatingView.swift */,
+				6BA5DAD727ACBCB60038C9BF /* EmojiRatingView.swift */,
+			);
+			path = DetailViews;
+			sourceTree = "<group>";
+		};
+		6BA5DADD27ACCE840038C9BF /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B9F149427AA49D0006DACE2 /* DataController.swift */,
+				6B9F149127AA49A8006DACE2 /* Bookworm.xcdatamodeld */,
+			);
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
