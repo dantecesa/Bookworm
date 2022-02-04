@@ -17,9 +17,6 @@ struct ContentView: View {
         NavigationView {
             List {
                 Section {
-                    Text("Debug: we have \(books.count) books")
-                }
-                Section {
                     ForEach(books, id:\.self) { book in
                         NavigationLink {
                             DetailView(book: book)
