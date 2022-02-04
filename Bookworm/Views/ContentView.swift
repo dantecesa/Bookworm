@@ -36,12 +36,16 @@ struct ContentView: View {
                             }
                         }
                     }.onDelete { indexSet in
-                        deleteBook(forBooks: Array(books), andIndices: indexSet)
+                        deleteBook(at: indexSet)
                     }
                 }
             }
             .navigationTitle("Bookworm")
             .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    EditButton()
+                }
+                
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         showAddSheet = true
@@ -56,9 +60,9 @@ struct ContentView: View {
         }
     }
     
-    private func deleteBook(forBooks books: [Book], andIndices: IndexSet) {
-        for index in andIndices {
-            let item = books[index]
+    private func deleteBook(at offsets: IndexSet) {
+        for offset in offsets {
+            let item = books[offset]
             moc.delete(item)
         }
         
