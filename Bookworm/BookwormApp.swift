@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct BookwormApp: App {
+struct CoreDataExample: App {
     @StateObject private var dataController = DataController()
     
     var body: some Scene {
